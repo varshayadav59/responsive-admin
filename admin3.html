@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border border-dark-subtle border-bottom p-3 ">
+      <div class="container-fluid d-flex justify-content-start  align-items-center">
+          <a class="navbar-brand" href="#">
+              <img  class="logo" src="TCC logo2.svg" alt="Bootstrap" >
+          </a>
+          <div class="breadcrumb-container " style="margin-left: 50px;">
+              <div class="page-title">Add Team Member</div>
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a>Team Member</a></li>
+                      <li class="breadcrumb-item"><a>Team Members</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Add Team Member</li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+
+          <div class="d-md-flex align-items-center ">
+              <!-- Language Selector -->
+              <div class="dropdown me-3">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="uk-flag.png" alt="EN(UK)" class="flag-icon" height="20" width="20"> EN(UK)
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <li><a class="dropdown-item" href="#">EN(UK)</a></li>
+                      <li><a class="dropdown-item" href="#">FR</a></li>
+                  </ul>
+              </div>
+
+              <button class="btn btn-light me-3">
+                  <img src="notification.png" height="20" width="20">
+
+              </button>
+
+              <!-- Settings Icon -->
+              <button class="btn btn-light me-3">
+                  <img src="setting.png" height="20" width="20">
+              </button>
+
+              <!-- User Profile -->
+              <div class="dropdown">
+                  <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button"
+                      id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="profile.jpg" alt="Profile" class="profile-pic" width="20" height="20">
+                      
+                      <span class=>Megan Roberts</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+              </div>
+          </div>
+  </nav>
+  
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Toggle Button for Mobile -->
+      <button class="btn btn-primary d-md-none m-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar">
+
+      </button>
+
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 collapse d-md-block bg-light vh-100 " id="sidebar">
+        <div class="accordion" id="sidebarAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseDashboard" aria-expanded="true" aria-controls="collapseDashboard">
+                <img src="dashboard.svg"> Dashboard
+              </button>
+            </h2>
+            <div id="collapseDashboard" class="accordion-collapse collapse show" data-bs-parent="#sidebarAccordion">
+              <div class="accordion-body">
+                Content for Dashboard
+              </div>
+            </div>
+          </div>
+
+          <br>
+          
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTeam" aria-expanded="false"
+                aria-controls="collapseTeam">
+                <img src="team1.png" width="20" height="20"> TEAM MEMBER
+              </button>
+            </h2>
+            <div id="collapseTeam" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><img src="team.png" width="20" height="20"> <a href="form.html">Team Member</a></li>
+                  <li><img src="certification.svg"> Certification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
+                aria-controls="collapseProject">
+                <img src="project.png" width="20" height="20"> PROJECT
+              </button>
+            </h2>
+            <div id="collapseProject" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+              <div class="accordion-body">
+                Content for Project
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseClient" aria-expanded="false"
+                aria-controls="collapseClient">
+                <img src="client.png" width="20" height="20"> CLIENT
+              </button>
+            </h2>
+            <div id="collapseClient" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+              <div class="accordion-body">
+                Content for Client
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseLearning" aria-expanded="false"
+                aria-controls="collapseLearning">
+                <img src="learning.png" width="20" height="20"> LEARNING PATH
+              </button>
+            </h2>
+            <div id="collapseLearning" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+              <div class="accordion-body">
+                Content for Learning Path
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container mt-4 d-flex justify-content-end " >
+    <div class="card p-4" style="width: 90%;">
+    <h1>Add Team Member</h1>
+    <h6>Add team member to the organazation</h6>
+  <div class="container mt-4">
+      <div class="container">
+          <div class="row border-bottom">
+              <div class="col-md-10">
+                
+              </div>
+              <div class="col-md-2">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+                      <button class="btn btn-danger me-md-2" type="button">Cancel</button>
+                      <button class="btn btn-primary" type="button">Save</button>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-12 d-flex">
+                  <div class="col-md-4 ">
+                      <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Profile">
+                  </div>
+                  <div class="col-8 d-flex  flex-wrap">
+                      <div class="col-md-4">
+                          <label class="form-label">First Name *</label>
+                          <input type="text" class="form-control">
+                      </div>
+                      <br>
+                      <div class="col-md-4">
+                          <label class="form-label">Last Name *</label>
+                          <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-12">
+                          <label class="form-label mt-3">Email *</label>
+                          <input type="email" class="form-control" placeholder="example@mail.com">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-md-3">
+                  <label class="form-label">Team Member ID</label>
+                  <input type="text" class="form-control" placeholder="Enter ID">
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Designation</label>
+                  <select class="form-select">
+                      <option selected>Select Designation</option>
+                  </select>
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Role</label>
+                  <select class="form-select">
+                      <option selected>Select Role</option>
+                  </select>
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Department</label>
+                  <select class="form-select">
+                      <option selected>Select Department</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="row mt-3">
+              <div class="col-md-3">
+                  <label class="form-label">Reporting Manager</label>
+                  <select class="form-select">
+                      <option selected>Select Reporting Manager</option>
+                  </select>
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Joining Date</label>
+                  <input type="date" class="form-control">
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Billing Status</label>
+                  <select class="form-select">
+                      <option selected>Select Billing Status</option>
+                  </select>
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Availability Status</label>
+                  <select class="form-select">
+                      <option selected>Select Availability Status</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="row mt-3">
+              <div class="col-md-3">
+                  <label class="form-label">Total Experience</label>
+                  <div class="d-flex">
+                      <input type="number" class="form-control me-2" placeholder="Year">
+                      <input type="number" class="form-control" placeholder="Month">
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Cluster</label>
+                  <select class="form-select">
+                      <option selected>Select Cluster</option>
+                  </select>
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Available From</label>
+                  <input type="date" class="form-control">
+              </div>
+              <div class="col-md-3">
+                  <label class="form-label">Tags</label>
+                  <select class="form-select">
+                      <option selected>Select Tags</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="mt-3">
+              <label class="form-label"><strong>Bio</strong></label>
+  <div class="border rounded">
+      <!--
+     <div class="editor-toolbar p-2">
+          <button class="btn btn-light btn-sm"><b>B</b></button>
+          <button class="btn btn-light btn-sm"><i>I</i></button>
+          <button class="btn btn-light btn-sm"><u>U</u></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-quote-right"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-align-left"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-align-center"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-align-right"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-align-justify"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-link"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-image"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-subscript"></i></button>
+          <button class="btn btn-light btn-sm"><i class="fas fa-superscript"></i></button>
+      </div> -->
+      <!-- <div class="editor-content" contenteditable="true">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </div> 
+      -->
+  
+
+      
+
+      
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor/css/froala_editor.pkgd.min.css">
+          <script src="https://cdn.jsdelivr.net/npm/froala-editor/js/froala_editor.pkgd.min.js"></script>
+         <textarea id="bio-editor"></textarea>     
+                
+                
+
+          <script>
+              new FroalaEditor('#bio-editor');
+          </script>
+
+
+
+      
+
+
+
+          
+</div>
+          <div class="upload-section">
+              <label><b>Upload CV</b></label>
+              <div class="upload-box" onclick="document.getElementById('fileInput').click();">
+                  Drag and drop a file here or Choose file to upload
+                  <input type="file" id="fileInput" accept=".pdf,.doc,.docx">
+                  <button class="upload-btn">UPLOAD</button>
+                  <p id="fileName"></p>
+              </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+<!-- -------------------------------------------------------------- -->
+
+
+<div class="container mt-4">
+    <h4>Add Skill Sets</h4>
+
+    <div class="mb-3">
+        <label class="form-label">Skill Sets</label>
+        <select class="form-select">
+            <option>Select Skill Sets</option>
+        </select>
+    </div>
+
+    <div class="card p-3">
+        <div class="row mb-2">
+            <div class="col-md-2 fw-bold">Skill</div>
+            <div class="col-md-2 fw-bold">Level</div>
+            <div class="col-md-2 fw-bold">Experience Required</div>
+            <div class="col-md-2 fw-bold">Assessed By</div>
+            <div class="col-md-2 fw-bold">Assessed On</div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Skill Row Start -->
+        <div class="row align-items-center mb-3">
+            <div class="col-md-2">HTML</div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Experience</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex">
+                <input type="number" class="form-control me-2" placeholder="Year">
+                <input type="number" class="form-control" placeholder="Month">
+            </div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Assessed By</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+        <!-- Skill Row End -->
+
+        <!-- Duplicate the above row for Python, JavaScript, Bootstrap -->
+        <div class="row align-items-center mb-3">
+            <div class="col-md-2">Python</div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Experience</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex">
+                <input type="number" class="form-control me-2" placeholder="Year">
+                <input type="number" class="form-control" placeholder="Month">
+            </div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Assessed By</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-3">
+            <div class="col-md-2">JavaScript</div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Experience</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex">
+                <input type="number" class="form-control me-2" placeholder="Year">
+                <input type="number" class="form-control" placeholder="Month">
+            </div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Assessed By</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-3">
+            <div class="col-md-2">Bootstrap</div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Experience</option>
+                </select>
+            </div>
+            <div class="col-md-2 d-flex">
+                <input type="number" class="form-control me-2" placeholder="Year">
+                <input type="number" class="form-control" placeholder="Month">
+            </div>
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Select Assessed By</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="date" class="form-control">
+            </div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FontAwesome for Trash Icon -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+<!-- -------------------------------------------------------------- -->
+
+</body>
+
+</html>

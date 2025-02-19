@@ -1,0 +1,242 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed; 
+    top: 10px;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keep sidebar below navbar */
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-logo img {
+    max-height: 50px; /* Ensure it fits properly */
+    width: auto; /* Maintain aspect ratio */
+    /* object-fit: cover; */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 250px; /* Match sidebar width */
+    height: 60px; /* Match sidebar-logo height */
+    width: calc(100% - 250px); /* Fill remaining space */
+    background-color: white;
+    display: flex;
+    align-items: self-start ;
+    padding: 0 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure navbar is above sidebar */
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.breadcrumb-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: -1px;
+}
+
+.breadcrumb-nav {
+    font-size: 12px;
+    color: #777;
+    margin-top: 1px;
+}
+
+.breadcrumb-nav a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 5px;
+}
+
+/* Right Container */
+
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* Add vertical separators to ALL elements except the first one */
+.right-container > div {
+    position: relative; /* Ensures proper alignment */
+    display: flex;
+    align-items: center;
+    padding-left: 15px;  /* Space after line */
+    margin-top: 10px;
+}
+
+/* Apply vertical line to all except the first element */
+.right-container > div:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;  /* Adjust height as needed */
+    background-color: #ddd;
+}
+
+
+/* Language Section */
+.us-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+}
+
+.lang {
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 100px;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Icons */
+.notification-icon,
+.setting-icon {
+    font-size: 16px;
+    cursor: pointer;
+    color: #585858;
+    position: relative;
+}
+
+.notification-icon::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+/* User Profile */
+.right-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.role {
+    font-size: 12px;
+    color: #777;
+}
+
+.dropdown-icon {
+    font-size: 14px;
+    color: #333;
+}
+
+.content-card {
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: calc(100%);
+    margin: auto;
+}
+.role {
+    font-size: 12px;
+    color: #777;
+}
+
+.dropdown-icon {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 56px; /* Same as navbar height */
+    margin-left: 250px; /* Same as sidebar width */
+    padding: 20px;
+    background: #f8f9fa;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+
+
+

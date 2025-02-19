@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="dashboard" transform="translate(-1)">
+    <path id="Path_129693" data-name="Path 129693" d="M0,0H24V24H0Z" transform="translate(1)" fill="none"/>
+    <g id="Cerytification" transform="translate(3.213 1.631)">
+      <path id="Path_194938" data-name="Path 194938" d="M9.579,20.369h7.846a1.333,1.333,0,0,0,1.333-1.333V6.921a1.333,1.333,0,0,0-.39-.942L13.148.759a1.333,1.333,0,0,0-.942-.39H2.758A1.347,1.347,0,0,0,1.425,1.7V6.264" transform="translate(0.516 0)" fill="none" stroke="#797a7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_194939" data-name="Path 194939" d="M13.992,7.035H8.658A1.333,1.333,0,0,1,7.325,5.7V.369" transform="translate(5.283 0)" fill="none" stroke="#797a7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_194940" data-name="Path 194940" d="M4.4,12.063A3.619,3.619,0,1,0,.786,8.444,3.619,3.619,0,0,0,4.4,12.063" transform="translate(0 3.601)" fill="none" stroke="#797a7a" stroke-width="1.5"/>
+      <path id="Path_194941" data-name="Path 194941" d="M1.266,8.126V14.1l2.756-1.76L6.776,14.1V8.126" transform="translate(0.387 6.267)" fill="none" stroke="#797a7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

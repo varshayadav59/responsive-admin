@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card p-4">
+            <div class="row border-bottom">
+                <div class="col-md-10">
+                    <h4>Add Team Member</h4>
+                    <p>Add team member to the organization.</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+                        <button class="btn btn-danger me-md-2" type="button">Cancel</button>
+                        <button class="btn btn-primary" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <div class="col-md-4 ">
+                        <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Profile">
+                    </div>
+                    <div class="col-8 d-flex  flex-wrap">
+                        <div class="col-md-4">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="col-md-4">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label mt-3">Email *</label>
+                            <input type="email" class="form-control" placeholder="example@mail.com">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <label class="form-label">Team Member ID</label>
+                    <input type="text" class="form-control" placeholder="Enter ID">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Designation</label>
+                    <select class="form-select">
+                        <option selected>Select Designation</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Role</label>
+                    <select class="form-select">
+                        <option selected>Select Role</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Department</label>
+                    <select class="form-select">
+                        <option selected>Select Department</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <label class="form-label">Reporting Manager</label>
+                    <select class="form-select">
+                        <option selected>Select Reporting Manager</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Joining Date</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Billing Status</label>
+                    <select class="form-select">
+                        <option selected>Select Billing Status</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Availability Status</label>
+                    <select class="form-select">
+                        <option selected>Select Availability Status</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <label class="form-label">Total Experience</label>
+                    <div class="d-flex">
+                        <input type="number" class="form-control me-2" placeholder="Year">
+                        <input type="number" class="form-control" placeholder="Month">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Cluster</label>
+                    <select class="form-select">
+                        <option selected>Select Cluster</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Available From</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Tags</label>
+                    <select class="form-select">
+                        <option selected>Select Tags</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <label class="form-label"><strong>Bio</strong></label>
+    <div class="border rounded">
+        <div class="editor-toolbar p-2">
+            <button class="btn btn-light btn-sm"><b>B</b></button>
+            <button class="btn btn-light btn-sm"><i>I</i></button>
+            <button class="btn btn-light btn-sm"><u>U</u></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-quote-right"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-align-left"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-align-center"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-align-right"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-align-justify"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-link"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-image"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-subscript"></i></button>
+            <button class="btn btn-light btn-sm"><i class="fas fa-superscript"></i></button>
+        </div>
+        <div class="editor-content" contenteditable="true">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+    </div>
+            </div>
+            <div class="upload-section">
+                <label><b>Upload CV</b></label>
+                <div class="upload-box" onclick="document.getElementById('fileInput').click();">
+                    Drag and drop a file here or Choose file to upload
+                    <input type="file" id="fileInput" accept=".pdf,.doc,.docx">
+                    <button class="upload-btn">UPLOAD</button>
+                    <p id="fileName"></p>
+                </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
